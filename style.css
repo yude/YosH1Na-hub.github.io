@@ -2,3 +2,9 @@
 .font_red {
     color : #ff0000;  /* 赤 */
   }
+
+img.icon {
+    width: 50%;
+    height: 50%;
+    }
+    
