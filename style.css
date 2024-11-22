@@ -1,7 +1,12 @@
+/* サイト全体のフォント指定 */
+body{
+    font-family: sans-serif;
+    }
+
 /* classセレクタ */
 .font_red {
     color : #ff0000;  /* 赤 */
-  }
+    }
 
 .icon {
     width: 30%;
