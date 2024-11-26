@@ -11,7 +11,6 @@ body{
     .icon {
         width: 30%;
         border-radius: 50%; /* 丸くトリミング */
-        border: 5px solid;
-        border-image: linear-gradient(45deg, #b788e3, #ffccff) 1; /* 枠にグラデーション */
+        border: 5px solid #b788e3; /* 枠を追加 */
     }
     
