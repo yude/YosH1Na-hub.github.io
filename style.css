@@ -8,7 +8,17 @@ body{
     color : #ff0000;  /* 赤 */
     }
 
-.icon {
-    width: 30%;
-    }
+    div.image_border {
+        width: 100px;
+        padding: 5px;
+        border-radius:50%;
+        background: linear-gradient(to right bottom, #b788e3, #dd819d);
+      }
+       
+      div.image_circle {
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+        background-image: url("icon.jpg");
+      }
     
