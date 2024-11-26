@@ -1,35 +1,14 @@
 /* サイト全体のフォント指定 */
 body{
     font-family: sans-serif;
-    display: flex; /* フレックスボックスを使用 */
-    justify-content: center; /* 水平方向に中央揃え */
-    align-items: center; /* 垂直方向に中央揃え */
-    height: 100vh; /* ビューポート全体の高さを設定 */
-    margin: 0; /* 余白をなくす */
-    background-color: #f0f0f0; /* 背景色（任意） */
-}
-
-div.image_border {
-    width: 110px; /* 元の幅＋パディング分（5px * 2） */
-    height: 110px; /* 幅と同じにして完全な円に */
-    padding: 5px;
-    border-radius: 50%;
-    background: linear-gradient(to right bottom, #b788e3, #dd819d);
-    display: flex; /* 子要素を中央揃えするために使用 */
-    justify-content: center; /* 水平方向に中央揃え */
-    align-items: center; /* 垂直方向に中央揃え */
-}
-
-div.image_circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-image: url("icon.jpg");
-    background-size: cover; /* 画像を要素にフィットさせる */
-    background-position: center; /* 画像を中央揃え */
-}
+    }
 
 /* classセレクタ */
 .font_red {
     color : #ff0000;  /* 赤 */
     }
+
+.icon {
+    width: 30%;
+    }
+    
