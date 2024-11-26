@@ -9,9 +9,9 @@ body{
     }
 
     .icon {
-        width: 30%;
+        width: 10%;
         border-radius: 50%; /* 丸くトリミング */
-        border: 5px solid #b788e3; /* 枠を追加 */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 枠の影を追加 */
+        border: 5px solid;
+        border-image: linear-gradient(45deg, #b788e3, #ffccff) 1; /* 枠にグラデーション */
     }
     
