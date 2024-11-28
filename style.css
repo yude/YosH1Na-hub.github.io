@@ -14,8 +14,6 @@ body{
     border: 3px solid #b788e3; /* 枠を追加 */
 }
 
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-
 .area {
     background: #ffffff;
     background: -webkit-linear-gradient(to left, #ffffff, #ffccff);
