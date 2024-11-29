@@ -3,7 +3,7 @@ body{
     font-family: sans-serif;
 }
 
-/* classセレクタ */
+/* 文字の色指定のやつ */
 .font_red {
     color : #ff0000;  /* 赤 */
 }
@@ -14,6 +14,52 @@ body{
     border: 3px solid #b788e3; /* 枠を追加 */
 }
 
+/* SNSボタン全体 */
+.sns-button {
+    margin: 3px;
+    padding: 0px;
+    text-align: center;
+    list-style: none;
+    overflow: visible;
+    padding: 0;
+  }
+  
+/* 各 SNS ボタンのボックス */
+.sns-button li {
+    display: inline-block; 
+    margin: 7px;
+    padding: 0px 0px;
+    border-radius: 4px;
+    width: 70px;
+    height: 70px;
+    line-hight: 70px;
+  }
+  .sns-button li a::before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: all .3s ease;
+    text-align: center;
+    height: 70px; 
+    line-height: 70px; 
+    width: 70px; 
+    border-style: solid;
+    border-width: 1px;
+  }
+  
+  
+  .sns-button li a[href*="https://twitter.com/yoshina_00"]::before    { content: "\f099"; color: #55acee; }
+  
+  
+  .sns-button li a[href*="https://twitter.com/yoshina_00"]:hover::before   { 
+    background-color: #55acee; 
+    color:#fff;
+  }
+
+
+/* 背景に動くやつ */
 .area {
     background: #ffffff;
     background: -webkit-linear-gradient(to left, #ffffff, #ffccff);
@@ -23,6 +69,7 @@ body{
     background-position: center;
     background-size: 200% 200%;
 }
+
 
 .circles {
     position: absolute;
