@@ -16,46 +16,47 @@ body {
 
 /* SNSボタン全体 */
 .sns-button {
-    margin: 3px;
-    padding: 0px;
+    margin: 0 auto;
+    padding: 0;
     text-align: center;
     list-style: none;
-    overflow: hidden;
+    display: flex; /* リンクを横並びに配置 */
+    flex-wrap: wrap; /* 画面幅に応じて折り返す */
+    justify-content: center;
+    gap: 10px; /* ボタン間の余白 */
 }
 
 /* 各SNSボタンのボックス */
 .sns-button li {
-    display: inline-block;
-    margin: 7px;
-    padding: 0px;
-    border-radius: 4px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
     width: 70px;
     height: 70px;
-    line-height: 70px;
+    border-radius: 4px;
 }
 
+/* リンクのデザイン */
 .sns-button li a {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
+    display: flex; /* 子要素を中央揃え */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* リンク全体がクリック可能 */
+    height: 100%;
     text-decoration: none;
     position: relative;
+    background-color: #fff; /* 背景色 */
+    border: 1px solid #ccc; /* 枠線 */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* アイコンのスタイル */
 .sns-button li a::before {
-    content: '';
-    display: inline-block;
+    content: ''; /* FontAwesomeコードを使用 */
     font-family: FontAwesome;
-    font-size: 40px;
-    background-color: #fff;
-    border-radius: 4px;
-    transition: all .3s ease;
-    text-align: center;
-    height: 70px;
-    line-height: 70px;
-    width: 70px;
-    border-style: solid;
-    border-width: 1px;
+    font-size: 30px;
+    color: #555;
 }
 
 /* 各SNSごとのアイコン設定 */
@@ -69,6 +70,16 @@ body {
 .sns-button li a:hover::before {
     background-color: #ccc;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sns-button li {
+        width: 60px;
+        height: 60px;
+    }
+    .sns-button li a::before {
+        font-size: 25px;
+    }
 }
 
 /* 背景動くやつ */
