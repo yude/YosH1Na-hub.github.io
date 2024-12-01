@@ -31,15 +31,15 @@ body {
     margin: 7px;
     padding: 0px;
     border-radius: 4px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .sns-button li a {
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     text-decoration: none;
     position: relative;
 }
@@ -53,19 +53,19 @@ body {
     border-radius: 4px;
     transition: all .3s ease;
     text-align: center;
-    height: 70px;
-    line-height: 70px;
-    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
     border-style: solid;
     border-width: 1px;
 }
 
 /* 各SNSごとのアイコン設定 */
 .sns-button li a[href*="twitter.com"]::before { content: "\f099"; color: #b788e3; }
-.sns-button li a[href*="pixiv.net"]::before { content: "\e640"; color: #b788e3; }
+.sns-button li a[href*="pixiv.net"]::before { content: "\50"; color: #b788e3; }
 .sns-button li a[href*="fanbox.cc"]::before { content: "\f6e2"; color: #b788e3; }
 .sns-button li a[href*="skeb.jp"]::before { content: "\f518"; color: #b788e3; }
-.sns-button li a[href*="bsky.app"]::before { content: "\e671"; color: #b788e3; }
+.sns-button li a[href*="bsky.app"]::before { content: "\42"; color: #b788e3; }
 
 /* ホバー効果 */
 .sns-button li a:hover::before {
