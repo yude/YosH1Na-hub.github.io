@@ -1,11 +1,11 @@
 /* サイト全体のフォント指定 */
-body{
+body {
     font-family: sans-serif;
 }
 
-/* 文字の色指定のやつ */
+/* 文字の色指定 */
 .font_red {
-    color : #ff0000;  /* 赤 */
+    color: #ff0000; /* 赤 */
 }
 
 .icon {
@@ -20,21 +20,30 @@ body{
     padding: 0px;
     text-align: center;
     list-style: none;
-    overflow: visible;
-    padding: 0;
-  }
-  
-/* 各 SNS ボタンのボックス */
+    overflow: hidden;
+}
+
+/* 各SNSボタンのボックス */
 .sns-button li {
-    display: inline-block; 
+    display: inline-block;
     margin: 7px;
-    padding: 0px 0px;
+    padding: 0px;
     border-radius: 4px;
     width: 70px;
     height: 70px;
-    line-hight: 70px;
-  }
-  .sns-button li a::before {
+    line-height: 70px;
+}
+
+.sns-button li a {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    position: relative;
+}
+
+.sns-button li a::before {
+    content: '';
     display: inline-block;
     font-family: FontAwesome;
     font-size: 40px;
@@ -42,53 +51,35 @@ body{
     border-radius: 4px;
     transition: all .3s ease;
     text-align: center;
-    height: 70px; 
-    line-height: 70px; 
-    width: 70px; 
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
     border-style: solid;
     border-width: 1px;
-  }
-  
-  
-  .sns-button li a[href*="https://twitter.com/yoshina_00"]::before    { content: "\f099"; color: #55acee; }
-  .sns-button li a[href*="https://www.pixiv.net/users/61867296"]::before     { content: "\e640"; color: #0096fa;}
-  .sns-button li a[href*="https://yoshina.fanbox.cc"]::before     { content: "\f6e2"; color: #e9fa00;}
-  .sns-button li a[href*="https://skeb.jp/@yoshina_00"]::before     { content: "\f02d"; color: #00fa3eb2;}
-  .sns-button li a[href*="https://bsky.app/profile/yoshina.bsky.social"]::before     { content: "\e671"; color: #55acee;}
+}
 
-  .sns-button li a[href*="https://twitter.com/yoshina_00"]:hover::before   { 
-    background-color: #55acee; 
-    color:#fff;
-  }
-  .sns-button li a[href*="https://www.pixiv.net/users/61867296"]:hover::before {
-    background-color: #0096fa;
-    color: #fff;
-  }
-  .sns-button li a[href*="https://yoshina.fanbox.cc"]:hover::before {
-    background-color: #e9fa00;
-    color: #fff;
-  }
-  .sns-button li a[href*="https://skeb.jp/@yoshina_00"]:hover::before {
-    background-color: #00fa3eb2;
-    color: #fff;
-  }
-.sns-button li a[href*="https://bsky.app/profile/yoshina.bsky.social"]:hover::before   { 
-    background-color: #55acee; 
-    color:#fff;
-  }
+/* 各SNSごとのアイコン設定 */
+.sns-button li a[href*="twitter.com"]::before { content: "\f099"; color: #b788e3; }
+.sns-button li a[href*="pixiv.net"]::before { content: "\f03e"; color: #b788e3; }
+.sns-button li a[href*="fanbox.cc"]::before { content: "\f04d"; color: #b788e3; }
+.sns-button li a[href*="skeb.jp"]::before { content: "\f15c"; color: #b788e3; }
+.sns-button li a[href*="bsky.app"]::before { content: "\f0c2"; color: #b788e3; }
 
+/* ホバー効果 */
+.sns-button li a:hover::before {
+    background-color: #ccc;
+    color: #fff;
+}
 
-/* 背景に動くやつ */
+/* 背景動くやつ */
 .area {
     background: #ffffff;
     background: -webkit-linear-gradient(to left, #ffffff, #ffccff);
     width: 100%;
     height: 100vh;
-
     background-position: center;
     background-size: 200% 200%;
 }
-
 
 .circles {
     position: absolute;
@@ -191,7 +182,6 @@ body{
         opacity: 1;
         border-radius: 0;
     }
-
     100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
