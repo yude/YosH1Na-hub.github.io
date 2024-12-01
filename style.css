@@ -48,7 +48,7 @@ body {
     content: ''; /* FontAwesomeや画像を指定しない場合は空にする */
     display: inline-block;
     font-family: FontAwesome;
-    font-size: 40px;
+    font-size: 25px;
     background-color: #fff;
     border-radius: 4px;
     transition: all .3s ease;
