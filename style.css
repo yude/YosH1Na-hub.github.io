@@ -54,7 +54,7 @@ body{
   .sns-button li a[href*="https://www.pixiv.net/users/61867296"]::before     { content: "\f3ef"; color: #0096fa;}
   .sns-button li a[href*="https://yoshina.fanbox.cc"]::before     { content: "\f6e2"; color: #e9fa00;}
   .sns-button li a[href*="https://skeb.jp/@yoshina_00"]::before     { content: "\f02d"; color: #00fa3eb2;}
-  .sns-button li a[href*="https://bsky.app/profile/yoshina.bsky.social"]::before     { content: "e671"; color: #55acee;}
+  .sns-button li a[href*="https://bsky.app/profile/yoshina.bsky.social"]::before     { content: "\e671"; color: #55acee;}
 
   .sns-button li a[href*="https://twitter.com/yoshina_00"]:hover::before   { 
     background-color: #55acee; 
