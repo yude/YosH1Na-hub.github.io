@@ -60,10 +60,10 @@ body {
 
 /* 各SNSごとのアイコン設定 */
 .sns-button li a[href*="twitter.com"]::before { content: "\f099"; color: #b788e3; }
-.sns-button li a[href*="pixiv.net"]::before { content: "\f03e"; color: #b788e3; }
-.sns-button li a[href*="fanbox.cc"]::before { content: "\f04d"; color: #b788e3; }
-.sns-button li a[href*="skeb.jp"]::before { content: "\f15c"; color: #b788e3; }
-.sns-button li a[href*="bsky.app"]::before { content: "\f0c2"; color: #b788e3; }
+.sns-button li a[href*="pixiv.net"]::before { content: "\e640"; color: #b788e3; }
+.sns-button li a[href*="fanbox.cc"]::before { content: "\f6e2"; color: #b788e3; }
+.sns-button li a[href*="skeb.jp"]::before { content: "\f518"; color: #b788e3; }
+.sns-button li a[href*="bsky.app"]::before { content: "\e671"; color: #b788e3; }
 
 /* ホバー効果 */
 .sns-button li a:hover::before {
