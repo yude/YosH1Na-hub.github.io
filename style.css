@@ -96,9 +96,10 @@ body {
     position: absolute;
     display: block;
     list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 149, 250, 0.2);
+    width: 80px; /* 画像のサイズ調整 */
+    height: 80px;
+    background: url('medicine.png') no-repeat center;
+    background-size: contain; /* 画像を要素内に収める */
     animation: animate 25s linear infinite;
     bottom: -150px;
     z-index: 0;
