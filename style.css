@@ -22,6 +22,7 @@ body {
     border-radius: 50%; /* 丸くトリミング */
     border: 3px solid #b788e3; /* 枠を追加 */
     object-fit: cover;
+    position: relative;
 }
 
 /* SNSボタン全体 */
