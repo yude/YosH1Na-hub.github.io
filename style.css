@@ -17,9 +17,11 @@ body {
 }
 
 .icon {
-    width: 40%;
+    width: 20px;
+    height: 20px;
     border-radius: 50%; /* 丸くトリミング */
     border: 3px solid #b788e3; /* 枠を追加 */
+    object-fit: cover;
 }
 
 /* SNSボタン全体 */
