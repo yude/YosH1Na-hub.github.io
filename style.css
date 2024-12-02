@@ -82,7 +82,7 @@ body {
     background-position: top;
     background-size: 100% 100%;
     position: relative; /* 必要に応じて追加 */
-    z-index: 0; /* SNSボタンの後ろに配置 */
+    z-index: -10; /* SNSボタンの後ろに配置 */
 }
 
 .circles {
@@ -104,7 +104,7 @@ body {
     background: rgba(255, 149, 250, 0.2);
     animation: animate 25s linear infinite;
     bottom: -150px;
-    z-index: -1; /* 背景要素として配置 */
+    z-index: 0; /* 背景要素として配置 */
 }
 
 .circles li:nth-child(1) {
