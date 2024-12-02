@@ -1,13 +1,14 @@
 /* 背景動くやつ */
 body {
-    font-family: sans-serif; /* サイト全体のフォント指定 */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     background: #ffffff;
     background: -webkit-linear-gradient(to left, #ffffff, #ffccff);
-    width: 100%;
+    font-family: sans-serif;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    margin: 0 5vw;
 }
 
 /* 文字の色指定 */
