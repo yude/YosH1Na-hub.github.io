@@ -25,6 +25,10 @@ body {
     position: relative;
 }
 
+p {
+  margin: 5px 0;
+}
+
 /* SNSボタン全体 */
 .sns-button {
     margin: 3px;
