@@ -1,0 +1,51 @@
+{
+  "$schema": "https://tkytel.github.io/mantela/0.1/mantela.schema.json",
+  "version": "0.1.0",
+  "aboutMe": {
+    "identifier": "db30e15e-b101-4069-a406-9af3fdfe5c2e",
+    "name": "yoshina",
+    "preferredPrefix": [
+      "0447"
+    ]
+  },
+  "extensions": [
+    {
+      "name": "dial phone",
+      "extension": "200",
+      "type": "phone",
+      "identifier": "VH30KBEL"
+    },
+    {
+      "name": "facsimile",
+      "extension": "300",
+      "type": "fax",
+      "identifier": "FWG0LB39"
+    },
+    {
+      "name": "mobile phone",
+      "extension": "400",
+      "type": "phone",
+      "identifier": "JZPJVEFD"
+    }
+  ],
+  "providers": [
+    {
+      "name": "MIKANETEL",
+      "prefix": "0510",
+      "identifier": "93b2d256-39c1-4053-bda1-c0643dd40690",
+      "mantela": "https://tkytel.github.io/mantela/0.1/mantela.schema.json"
+    },
+    {
+      "name": "jiminy Local",
+      "prefix": "0119",
+      "identifier": "153048c5-db33-4e00-ad49-694762555d5c",
+      "mantela": "https://108jiminy.jp/phone/jiminylocalmantela.json"
+    },
+    {
+      "name": "jiminy Public",
+      "prefix": "0108",
+      "identifier": "5bbdd9ae-4d41-420c-80df-eba486495b12",
+      "mantela": "https://108jiminy.jp/phone/jiminypublicmantela.json"
+    }
+  ]
+}
