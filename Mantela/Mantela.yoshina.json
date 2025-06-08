@@ -6,6 +6,10 @@
     "name": "yoshina",
     "preferredPrefix": [
       "0447"
+    ],
+    "sipUri": [
+      "sip:uruchimochi.tail336ecb.ts.net:5060;transport=udp",
+      "sip:uruchimochi.tail336ecb.ts.net:5060;transport=tcp"
     ]
   },
   "extensions": [
